@@ -1,12 +1,12 @@
 let chooseBtn=document.getElementById('choose'),
 receiveBtn= document.getElementById('receive'),
 heading = document.getElementsByTagName('h2')[0],
-nameInput = document.getElementsByTagName("contactform_name")[0],
+nameInput = document.getElementsByClassName("contactform_name")[0],
 phoneInput = document.querySelector('.contactform_phone'),
 mailInput = document.querySelectorAll('.contactform_mail')[0],
 modal = document.querySelector('.modal'),
 close = document.querySelector(".close"),
-text= document.getElementsByName('message')[0];
+text = document.getElementsByName('message')[0];
 
 function hover(){
 	heading.textContent = "Действительно всё!";
@@ -18,7 +18,7 @@ function out(){
 
 heading.addEventListener("click", hover);
 heading.addEventListener("dbclick", function(){
-	heading.textContent = "Все включено"
+	heading.textContent = "Fuck yeah!"
 });
 
 receiveBtn.addEventListener('click', function(){
